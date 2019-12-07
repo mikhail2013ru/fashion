@@ -1,0 +1,39 @@
+.nav {
+  background-color: $secondColor;
+  padding: 20px 0;
+
+  .list {
+    display: flex;
+    padding-left: 30px;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      padding-left: 0;
+      justify-content: center;
+      line-height: 30px;                 
+    }
+
+    &__item {
+      padding-right: 30px;
+
+      &:last-child {
+        padding-right: 0;
+      }
+
+      @media (max-width: 320px) {
+        padding-right: 20px;                
+      }
+    }
+
+    &__link {
+      text-transform: uppercase;
+      color: white;
+      font-size: 15px;
+      font-family: $Lato-Bold;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}

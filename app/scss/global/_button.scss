@@ -1,0 +1,28 @@
+.button {
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 60px;
+    text-decoration: none;
+    font-family: $Lato-Bold, serif;
+    font-size: 20px;
+
+    @media (max-width: 320px) {
+        padding: 10px 60px;
+    }
+
+    &--red {
+        background: #9c1c28;
+        color: #fff;
+        transition: 0.3s;
+
+        &:hover {
+            background: lighten($color: #9c1c28, $amount: 7%);
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    &--text-uppercase {
+        text-transform: uppercase;
+    }
+}

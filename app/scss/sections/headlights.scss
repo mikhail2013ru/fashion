@@ -1,0 +1,57 @@
+.headlights {
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin: 150px 0 150px 30px;
+    justify-content: center;
+
+    @media (max-width: 576px) {
+      margin: 50px 0 80px 30px;
+    }
+
+    @media (max-width: 320px) {
+      margin: 50px 0 180px 30px;
+    }
+
+    .text {
+      
+      &__header {
+          color:white;
+          text-transform: uppercase;
+          font-family: $Lato-Bold;      
+          font-size: 35px;          
+      }
+
+      &__description {
+        padding-top: 5px;
+        color: $separator;
+        font-size: 20px;
+        font-family: $Lato-Medium;
+      }
+
+      .image {
+        position: absolute;
+        bottom: 0;
+        right: 0;  
+
+        @media (max-width: 768px) {
+          height: 200px;
+        }
+
+        @media (max-width: 576px) {
+          height: 130px;    
+        }
+      }
+    }
+  }
+} 
+
+  .bgColor {
+    &--light {
+      background-color: $light;
+    }
+
+    &--dark {
+      background-color: $dark;
+    }
+  }

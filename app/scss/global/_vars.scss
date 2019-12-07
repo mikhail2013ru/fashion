@@ -1,0 +1,32 @@
+// User variables:
+$accent: orange;
+$text: #333;
+$blue: #11749e;
+$headerColor: #212121;
+$gray: #a2a2a2;
+$secondColor: #030303;
+$light: #303030;
+$dark: #1c1c1c;
+$grayHeadlights: #282828;
+
+$LatoRegular: 'LatoRegular';
+$LatoBlack: 'Lato-Black';
+$Lato-Bold: 'Lato-Bold';
+$Lato-Medium: 'Lato-Medium';
+$ff-main: 'roboto-regular-webfont';
+$ff-main-Bold: 'Gotham-Bold';
+$ff-main-light: 'OpenSans-Light';
+$georgia-bold: 'georgia-bold';
+$ff-main-Medium: 'GothamPro-Medium';
+$ff-main-normal: 'Gotham-Book';
+
+$separator: #595959;
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// // Breakpoints mixin settings (node_modules/bootstrap/scss/mixins/_breakpoints.scss)
+// // Example: +media-breakpoint-down(xs) - ≥576px / +media-breakpoint-up(sm) - // ≤576px
+// // Default variables: node_modules/bootstrap/scss/_variables.scss
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)

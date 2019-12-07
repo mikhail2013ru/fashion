@@ -1,0 +1,49 @@
+.slider {
+    position: relative;
+    &-item {
+      position: relative;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+  
+      &__text {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        color: white;
+        transform: translateX(-50%);
+      }
+    } 
+    
+  .prev {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+  }
+
+  .next {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    font-size: 50px;
+  }  
+    
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+}

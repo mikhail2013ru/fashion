@@ -1,0 +1,137 @@
+.footer {    
+    background-color: black;
+    .contact { 
+        .border {
+            border-top: 2px solid $separator;
+            border-bottom: 2px solid $separator;
+            padding: 84px 0 106px 0;  
+        }
+
+        .mb-lg {
+            @media (max-width: 992px) {
+                margin-bottom: 40px;
+            }
+        }
+
+        .list {
+            &__header {
+                color: white;
+                text-transform: uppercase;
+                font-family: $Lato-Bold, serif;
+                font-size: 25px;
+                position: relative; 
+                &:after {
+                  position: absolute;
+                  content: '';
+                  left: 0;
+                  background: #9c1c28;
+                  height: 6px;
+                  width: 90px;
+                  top: 36px;
+                }
+            }  
+              
+            &__text {
+                color: #887979;
+                font-family: $LatoRegular, serif;
+                font-size: 15px;
+                padding: 46px 0 0 0;
+            }
+        }
+    
+        .title {
+            color: white;
+            text-transform: uppercase;
+            font-family: $Lato-Bold, serif;
+            font-size: 25px;
+            position: relative;
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                background: #9c1c28;
+                height: 6px;
+                width: 90px;
+                top: 36px;
+            }           
+        }
+        
+        .mb-lg {
+            @media (max-width: 992px) {
+                margin-top: 40px;
+            }
+        }
+
+        .contact-list {
+            padding-top: 46px;
+
+            @media (max-width: 992px) {
+                padding-top: 0;
+            } 
+    
+            &__item {
+                padding-bottom: 15px;
+                &:last-child {
+                    padding-bottom: 0;
+                }
+            }
+            
+            &__icon {
+                color: #9c1c28;
+            }
+                
+            &__text {
+                color: #887979;
+                font-family: $LatoRegular, serif;
+                font-size: 15px;
+                padding-left: 10px;            
+                vertical-align: middle;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+
+    .copyrights {
+        padding: 50px 0;
+
+        &__text {
+
+            @media (max-width: 320px) {
+                text-align: center;
+            }
+            font-family: $Lato-Bold, serif;
+            font-size: 15px;
+            color: white;
+            span {
+                color: #887979;
+            }
+        }
+
+        .payments {
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+
+            @media (max-width: 320px) {
+                justify-content: center;
+                margin-top: 20px;
+            }
+            &__icon {
+                padding-right: 28px;
+                font-size: 25px;
+            }
+
+            .fa-cc-mastercard {
+                @media (max-width: 320px) {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+    

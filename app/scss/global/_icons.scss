@@ -1,0 +1,23 @@
+.icon {
+    margin: auto auto 23px auto;
+}
+
+.icon-accessories1 {
+    @include sprite($accessories1);
+}
+
+.icon-accessories2 {
+    @include sprite($accessories2);
+}
+
+.icon-accessories3 {
+    @include sprite($accessories3);
+}
+
+.icon-accessories4 {
+    @include sprite($accessories4);
+}
+
+.icon-accessories5 {
+    @include sprite($accessories5);
+}
