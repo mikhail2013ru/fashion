@@ -1,0 +1,18 @@
+.icons {
+	display: flex;
+	align-items: center;
+
+	&__cart {
+		margin: 0 12px;
+	}
+
+	&__search {
+		position: relative;
+		margin-left: 12px;
+	}
+
+	&__img {
+		display: block;
+		cursor: pointer;
+	}
+}

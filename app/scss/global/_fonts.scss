@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap&subset=cyrillic');
+
 // font-weight helper:
 
 // 100 Extra Light or Ultra Light;
@@ -10,17 +12,19 @@
 // 900 Extra Black or Fat or Ultra Black
 
 
-@mixin font($f-name, $f-style, $f-weight, $f-url) {
-    @font-face {
-        font-family: $f-name;
-		font-style: $f-style;
-		font-weight: $f-weight;
-		src: url($f-url) format('woff2');
-    }
+// @mixin font($f-name, $f-style, $f-weight, $f-url) {
+//     @font-face {
+//         font-family: $f-name;
+// 		font-style: $f-style;
+// 		font-weight: $f-weight;
+// 		src: url($f-url) format('woff2');
+//     }
 		
-}
+// }
 	
-@include font('LatoRegular', normal, 400, '../fonts/Lato-Regular/LatoRegular.woff2');
-@include font('Lato-Black', bold, 700, '../fonts/Lato-Black/Lato-Black.woff2');
-@include font('Lato-Bold', bold, 700, '../fonts/Lato-Bold/LatoBold.woff2');
-@include font('Lato-Medium', bold, 500, '../fonts/Lato-Medium/Lato-Medium.woff2');
+// @include font('LatoRegular', normal, 400, '../fonts/Lato-Regular/LatoRegular.woff2');
+// @include font('Lato-Black', bold, 700, '../fonts/Lato-Black/Lato-Black.woff2');
+// @include font('Lato-Bold', bold, 700, '../fonts/Lato-Bold/LatoBold.woff2');
+// @include font('Lato-Medium', bold, 500, '../fonts/Lato-Medium/Lato-Medium.woff2');
+
+
