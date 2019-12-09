@@ -60,15 +60,17 @@ gulp.task('scripts', function() {
 });
 
 //JS:Libraries
-gulp.task('JS:Libraries', function() {
+/* gulp.task('JS:Libraries', function() {
 	return gulp.src([
+		'app/libs/jquery/jquery-3.4.1.slim.min.js',
+		'app/libs/OwlCarousel2/owl.carousel.min.js'
 		//'app/libs/jquery/jquery-3.4.1.min.js'
 		//'app/libs/wow/wow.min.js'
 		])
 	.pipe(sourcemaps.init())
-	.pipe(sourcemaps.write())
-	.pipe(gulp.dest('app/js/'));
-});
+	.pipe(sourcemaps.write());
+	//.pipe(gulp.dest('app/js/'));
+}); */
 
 /* Sprite */
 gulp.task('sprite', function(cb) {

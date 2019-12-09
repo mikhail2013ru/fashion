@@ -1,0 +1,82 @@
+.offers {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 0 25px;
+
+	&__left,
+	&__right {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__element {
+		position: relative;
+
+		img {
+			display: block;
+			max-width: 100%;
+		}
+
+	}
+	
+	&__category {
+		font-size: 13px;
+		line-height: 36px;
+		letter-spacing: 0.65px;
+		font-weight: 500;
+		color: $offers-color;
+	}
+
+	&__name{
+		font-size: 19px;
+		line-height: 24px;
+		font-weight: 700;
+		letter-spacing: 1.425px;
+		color: $offers-color;
+	}
+
+	&__info {
+		position: absolute;
+		z-index: 1;
+		left: 30px;
+
+		p {
+			margin: 30px 0;
+		}
+	}		
+
+	a {
+		@include btn() {
+			margin-top: 40px;
+		};
+	}
+
+	&__new {
+		position: absolute;
+		right: 10px;
+		top: 10px;
+		font-size: 11px;
+		line-height: 14px;
+		padding: 5px 10px;
+		background-color: $black;
+		color: $white;
+		text-transform: uppercase;
+
+		&::before {
+			content: '';
+			border: 10px solid transparent;
+			border-left: 10px solid $black;
+			position: absolute;
+			left: 0;
+			bottom: -9px;
+		}
+	}
+
+	.offers__center {
+
+		.offers__info {
+			top: 105px;
+		}
+	}
+}

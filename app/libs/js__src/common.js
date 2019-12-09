@@ -1,16 +1,19 @@
-$('.carousel').carousel({
-    interval: 2000
-})
-
-//let link = document.querySelectorAll('.nav .list__link');
-let discount = document.getElementById('discount');
-let button = document.querySelector('.button1');
-
-console.log(button);
-
-button.addEventListener('click', function(event) {
-    discount.scrollIntoView({
-        'behavior': 'smooth',
-    });
+$(document).ready(function() {
+	$('.slider .owl-carousel').owlCarousel({
+		loop: true,
+		margin: 0,
+		nav: true,
+		dots: false,
+		navText: [],
+		responsive: {
+			0: {
+				items: 1,
+				dots: true,
+				nav: false
+			},
+			480: {
+				items: 1
+			}
+		}
+	})
 });
-//console.log(link[0]);
